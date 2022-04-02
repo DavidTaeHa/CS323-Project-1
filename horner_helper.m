@@ -1,3 +1,4 @@
+%horners helper method for the newton_horner program
 function x= horner_helper(valList, x0val)
 a = valList(end);
 b = valList(end);
