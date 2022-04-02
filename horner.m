@@ -24,3 +24,6 @@ for i=n-1:-1:1
     end
 end
 result(end) = []
+for i = 1:length(result)
+    fprintf("Result %d: %d\n", i, result(i))
+end
