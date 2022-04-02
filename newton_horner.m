@@ -19,7 +19,7 @@ i = 0; %counter for iterations
 
 %Calculates the Newton's formula until the error value exceeds the error
 %tolerance or until number of iterations exceeds the max limit
-while e > E || i < N
+while e > E && i <= N
     horner_result = horner_helper(list,x0); %result of horners algorithm
     fx0 = horner_result(1);
     fx0_prime = horner_result(2);
