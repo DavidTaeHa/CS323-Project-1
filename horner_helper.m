@@ -1,6 +1,11 @@
 function x= horner_helper(valList, x0val)
-%HORNER_HELPER Summary of this function goes here
-%   Detailed explanation goes here
-
+a = valList(end)
+b = valList(end)
+x0 = x0val
+for i = length(valList)-1:-1:1
+    a = a*x0 + valList(i)
+    if i > 1
+        b = b*x0 + a
+    end
 end
-
+x = [a,b]
