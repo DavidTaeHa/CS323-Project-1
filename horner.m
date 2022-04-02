@@ -1,15 +1,16 @@
 %Horners Algorithm
 %INPUTS: a0,a1,a2,...,an , x0
 clear all
-list = []
+list = [] %list of coefficients of polynomial
 degree = input("Input polynomial degree:\n")
-x0 = input("Input x0:\n")
+
 fprintf("Input coefficients:\n");
-n = degree + 1
+n = degree + 1 %number of coefficients in polynomial
 for i=1:n
     temp = input("")
     list = [list, temp]
 end
+x0 = input("Input x0:\n")
 a = list(n)
 b = list(n)
 for i=n-1:-1:1
