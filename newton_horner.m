@@ -16,10 +16,10 @@ e = 100 %current error
 i = 0 %counter for iterations
 
 while e > E | i < N
-    horner_result = horner_helper(list,x0)
-    fx0 = horner_result(1)
-    fx0_prime = horner_result(2)
-    x1 = x0 - (fx0)/(fx0_prime)
+    horner_result = horner_helper(list,x0) %result of horners algorithm
+    fx0 = horner_result(1) %value of f(x0)
+    fx0_prime = horner_result(2) %value of f(x0)'
+    x1 = x0 - (fx0)/(fx0_prime) %value of 
     i = i + 1
     e = abs(x1 - x0)
     x0 = x1
@@ -28,5 +28,5 @@ end
 if i <= N
     fprintf("Final val: %f\n", x1)
 else
-    fprintf("Error\n")
+    fprintf("Error: no solution found\n")
 end
