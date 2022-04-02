@@ -1,6 +1,6 @@
 %Horners Algorithm
 %INPUTS: a0,a1,a2,...,an , x0
-clear all
+clear
 list = []; %list of coefficients of polynomial
 degree = input("Input polynomial degree:\n");
 fprintf("Input coefficients:\n");
@@ -30,9 +30,10 @@ for i=n-1:-1:1
         result(j) = result(j) * x0 + result(j-1);
     end
 end
-result(end) = [];
 
 %Print out values for multiple derivatives
+factorial_iteration = 0; %iteration for the factorial
 for i = 1:length(result)
-    fprintf("Result %d: %f\n", i, result(i))
+    fprintf("Result %d: %f\n", i, result(i) * factorial(factorial_iteration));
+    factorial_iteration = factorial_iteration + 1;
 end
