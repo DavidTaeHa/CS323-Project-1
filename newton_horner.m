@@ -1,4 +1,5 @@
 %Newton with horners algorithm
+%INPUTS: a0,a1,a2,...,an , x0 , E, N
 clear
 list = []; %list of coefficients of polynomial
 degree = input("Input polynomial degree:\n");

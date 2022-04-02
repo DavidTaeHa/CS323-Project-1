@@ -1,4 +1,5 @@
 %horners helper method for the newton_horner program
+%INPUTS: a0,a1,a2,...,an , x0
 function x= horner_helper(valList, x0val)
 a = valList(end);
 b = valList(end);
