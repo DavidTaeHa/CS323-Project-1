@@ -12,15 +12,10 @@ for i=1:n
 end
 x0 = input("Input x0:\n")
 temp = list(n)
-result = []
-for i = 1:n
-    result = [result, temp]
-end
+result
 for i=n-1:-1:1
     temp = temp * x0 + list(i)
-    result(1) = temp
-    for j=2:i
-        result(j) = result(j) * x0 + result(j-1)
+    for j=i-1:-1:1
+        list(i) = list(i) * x0 + list(i+1)
     end
 end
-result(end) = []
