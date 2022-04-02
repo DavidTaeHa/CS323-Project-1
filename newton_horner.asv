@@ -10,23 +10,11 @@ for i=1:n
 end
 x0 = input("Input x0:\n")
 temp = list(n)
-E = input("Input error tolerance:\n") %error tolerance
+e = input("Input error tolerance:\n") %error tolerance
 N = input("Input max number\n") %max number of inputs
-e = 100 %current error
+E = 0 %current error
 i = 0 %counter for iterations
-
-while e > E | i < N
+while E > e | i < N
     horner_result = horner_helper(list,x0)
-    fx0 = horner_result(1)
-    fx0_prime = horner_result(2)
-    x1 = x0 - (fx0)/(fx0_prime)
-    i = i + 1
-    e = abs(x1 - x0)
-    x0 = x1
-end
-
-if i <= N
-    fprintf("Final val: %f\n", x1)
-else
-    fprintf("Error\n")
-end
+    x1 = x0 - ()/()
+    x0 = x
