@@ -26,9 +26,4 @@ end% for
 evalPol = P(1,:);
 end
 
-clc;clear;
 
-T = [2,-1,1,0,0,1,1,0.5]';
-
-y0 = Neville(T);
-disp(y0);
