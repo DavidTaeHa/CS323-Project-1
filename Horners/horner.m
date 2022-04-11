@@ -11,24 +11,22 @@ txtFile = input(prompt, "s");
 openFile = fopen(txtFile); 
 
 % Gets all the necessary stuff from the txt file
-components = fscanf(openFile,'%f'); 
+variables = fscanf(openFile,'%f'); 
 
 % Closes the file
 fclose(openFile);
 
 list = []; %list of coefficients of polynomial
-degree = input("Input polynomial degree:\n");
-fprintf("Input coefficients:\n");
-
+degree = variables(1);
 n = degree + 1; %number of coefficients in polynomial
 
 %Adds input coefficients to an array
-for i=1:n
-    temp = input("");
+for i=2:(n+1)
+    temp = variables(i);
     list = [list, temp];
 end
 
-x0 = input("Input x0:\n");
+x0 = variables(end);
 temp = list(n); %coefficient of the number with highest degree
 result = []; %array for final result
 

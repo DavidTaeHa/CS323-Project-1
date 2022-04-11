@@ -26,4 +26,3 @@ end% for
 evalPol = P(1,:);
 end
 
-
