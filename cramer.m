@@ -32,7 +32,7 @@ end
 
 end
 function [detA,C] = gauss(A)
-%GAUSS 进行高斯消元法
+%GAUSS 陆酶脨脨赂脽脣鹿脧没脭陋路篓
 %   A
 [m,n] = size(A);
 if m~=n
@@ -55,3 +55,5 @@ for i = 2:n
 end
 end
 
+T = [3 3 4 2 -1 3 -4 2 2 5 5 2 -6]';
+[x,detA,detAn,A,b] = cramer(T);
