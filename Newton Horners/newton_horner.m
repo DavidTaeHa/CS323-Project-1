@@ -18,18 +18,18 @@ variables = fscanf(openFile,'%f');
 fclose(openFile);
 
 list = []; %list of coefficients of polynomial
-degree = variables(1)
+degree = variables(1);
 n = degree + 1; %number of coefficients in polynomial
 
 %Adds input coefficients to an array
 for i=2:(n+1)
-    temp = variables(i)
+    temp = variables(i);
     list = [list, temp];
 end
 
-x0 = variables(end-2)
-E = variables(end-1) %error tolerance
-N = variables(end) %max number of inputs
+x0 = variables(end-2);
+E = variables(end-1); %error tolerance
+N = variables(end); %max number of inputs
 e = 100; %current error
 i = 0; %counter for iterations
 
