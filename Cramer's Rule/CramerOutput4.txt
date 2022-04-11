@@ -1,0 +1,7 @@
+determinant A = -4
+determinant A1 = 4
+determinant A2 = -16
+determinant A3 = -12
+x1 = -1
+x2 = 4
+x3 = 3

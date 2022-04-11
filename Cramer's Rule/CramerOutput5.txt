@@ -1,0 +1,7 @@
+determinant A = 67
+determinant A1 = 0
+determinant A2 = 67
+determinant A3 = 67
+x1 = 0
+x2 = 1
+x3 = 1

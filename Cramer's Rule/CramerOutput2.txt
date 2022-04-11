@@ -1,0 +1,5 @@
+determinant A = 1
+determinant A1 = 8
+determinant A2 = -3
+x1 = 8
+x2 = -3

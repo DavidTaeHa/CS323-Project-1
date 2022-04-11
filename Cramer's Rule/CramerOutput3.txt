@@ -1,0 +1,7 @@
+determinant A = -33
+determinant A1 = -33
+determinant A2 = -66
+determinant A3 = -99
+x1 = 1
+x2 = 2
+x3 = 3
